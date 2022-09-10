@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <!-- Aligning items into the container -->
+    <style>
+
+
+.container
+{
+    /*to center the div*/
+    margin: 100px auto;
+
+    
+    border: 5px dotted red;
+    padding: 10px;
+
+    height: 500px;
+    width: 800px;
+
+    background-color: aqua;
+    display:flex ;
+    /* flex direction column reverse / row reverse /column */
+     flex-direction: row;
+
+     /* flex wrap for aligning items into the container without overflow*/
+     flex-wrap: wrap;
+
+     /*to align items or div as center ,it is used for "x" axis alignment*/
+    justify-content: center;
+    /* justify-content: space-around/space between; for get same spaces between divs */
+    
+    /* align-content- it is used for "y" axis alignment (b4 use this put "flex wrap")*/
+     align-content:center;/*flex-start/end /center / baseline /space-around/between */
+
+    
+
+    /* align-content: center;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* align-self: ; */
+/* .boxes:nth-child(5)
+{
+    align-self: flex-end;
+} */
+
+.boxes
+{
+    border:5px solid  black ;
+    background-color: rgb(38, 199, 145);
+    padding: 10px;
+    margin: 10px;
+   
+    /* padding-top:50px ; */
+}
+
+.boxstyle
+{
+    background-color: bisque;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- div*4{box $}  shortcut for creating multiple div-->
+       <div class="boxes ">BOX 1</div>
+       <div class="boxes boxstyle">BOX 2</div>
+       <div class="boxes">BOX 3</div>
+       <div class="boxes boxstyle">BOX 4</div>
+       <div class="boxes">BOX 5</div>
+
+               <!-- .box*4{BOXES $}  shortcut for creating multiple div with class name-->
+       <!-- <div class="box">BOXES 1</div>
+       <div class="box">BOXES 2</div>
+       <div class="box">BOXES 3</div>
+       <div class="box">BOXES 4</div> -->
+    </div>
+</body>
+</html>
